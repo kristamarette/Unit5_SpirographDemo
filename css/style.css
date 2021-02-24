@@ -1,1 +1,286 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* 16px */
+/* 80px */
+/* ------- FONTS -------------
+Fonts added:
+Century Gothic Pro Bold 
+
+font-family: century-gothic, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Century Gothic Pro Bold Italic
+
+font-family: century-gothic, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Century Gothic Pro Italic
+
+font-family: century-gothic, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Century Gothic Pro Regular
+
+font-family: century-gothic, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+/* ------------- ALL PAGES ----------------*/
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  height: 100vh;
+}
+
+/*--------NAVIGATION-----------*/
+header {
+  position: fixed;
+  width: 95vw;
+  height: 12vh;
+  background: none;
+  color: #1a1818;
+  font-weight: 700;
+  font-style: normal;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.pageTitle {
+  position: relative;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 7vh;
+  margin: 0;
+  padding: 0;
+  color: #1a1818;
+  visibility: unset;
+  z-index: 3;
+}
+
+.blur {
+  margin-top: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+  height: 15vh;
+  width: 100vw;
+  z-index: initial;
+}
+
+a.logo {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5em 0;
+  z-index: 2;
+}
+
+nav {
+  top: 0;
+  right: 1em;
+  float: right;
+  position: fixed;
+  height: 100vh;
+  background: #707070;
+  width: 25%;
+  visibility: hidden;
+  opacity: .80;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  z-index: 3;
+}
+
+.open {
+  margin: 0;
+  padding: 10px;
+  background-color: #1a1818;
+  border-radius: 50%;
+  height: 5vh;
+}
+
+.exit {
+  height: 2em;
+  float: right;
+  margin: 0;
+  padding: 1em;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 4em;
+}
+
+li a {
+  color: #f2f2f2;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.open {
+  cursor: pointer;
+  margin: 0.5em;
+}
+
+li a:hover {
+  background: #2466b3;
+}
+
+.open-nav {
+  visibility: unset;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.submenu {
+  padding: 0 1em;
+}
+
+.submenu p {
+  margin: 1em 0 1em 1em;
+  color: #1a1818;
+  line-height: 1.4em;
+}
+
+.submenu ul {
+  margin: 1em 0 1em;
+}
+
+.submenu a {
+  color: #1a1818;
+  background: none;
+}
+
+.submenu a:hover {
+  background: none;
+}
+
+li a {
+  background: #1a1818;
+  margin-top: 2px;
+}
+
+/*------------- MAIN PAGE ----------*/
+.welcome h2 {
+  padding: 3.25em 0px 5px 0px;
+  font-family: gautreaux, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3em;
+  text-align: center;
+  color: #1a1818;
+  margin-top: 0;
+  z-index: -2;
+}
+
+.welcome p {
+  margin: auto;
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #1a1818;
+  width: 40%;
+  z-index: -2;
+}
+
+.homepageMenu {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0;
+  right: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f2f2f2;
+  color: #1a1818;
+  text-align: center;
+  z-index: -2;
+}
+
+.column {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 300px;
+  padding: 5px;
+  margin: auto;
+  width: 300px;
+  background-color: #f2f2f2;
+  color: #1a1818;
+}
+
+.column img {
+  border-radius: 50%;
+  margin-top: 10px;
+  min-width: 300px;
+}
+
+.column a {
+  text-decoration: none;
+  color: #1a1818;
+}
+
+.column h3 {
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.column img:hover {
+  border: solid 2px #707070;
+  -webkit-box-shadow: 2px 2px 5px #707070, 2px 2px 5px #707070, 2px 2px 5px #707070;
+          box-shadow: 2px 2px 5px #707070, 2px 2px 5px #707070, 2px 2px 5px #707070;
+  text-align: center;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.svgDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+p {
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */
