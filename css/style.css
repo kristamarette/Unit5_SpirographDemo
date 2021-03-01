@@ -124,8 +124,11 @@ nav {
 
 ul {
   list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 0;
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 li a {
@@ -278,7 +281,6 @@ li a {
 }
 
 p {
-  text-align: center;
   font-family: century-gothic, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -288,6 +290,12 @@ p {
   visibility: hidden;
   width: 100vw;
   height: 100vh;
+  padding-top: 11vh;
+  padding-left: 20vw;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .st0 {
