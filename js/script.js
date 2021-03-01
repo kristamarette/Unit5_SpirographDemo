@@ -12,3 +12,4 @@ open.addEventListener('click', ()=> {
 exit.addEventListener('click', ()=> {
     nav.classList.remove('open-nav');
 })
+

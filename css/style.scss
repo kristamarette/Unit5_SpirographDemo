@@ -281,6 +281,11 @@ header {
     font-style: normal;
   }
 
+  #content {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
 
 
   //----------- SVG 1 ------------//

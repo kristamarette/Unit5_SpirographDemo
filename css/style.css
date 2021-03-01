@@ -284,6 +284,12 @@ p {
   font-style: normal;
 }
 
+#content {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
 .st0 {
   opacity: 0.5;
   fill: url(#SVGID_1_);
