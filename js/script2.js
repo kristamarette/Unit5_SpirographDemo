@@ -34,7 +34,7 @@ $(function() {
             tl1.fromTo(x, {
                 opacity: 0
             }, {
-                opacity: 0.25, 
+                opacity: 1, 
                 duration: 2,
                 stagger: 0.1,
                 ease: "power4.Out"

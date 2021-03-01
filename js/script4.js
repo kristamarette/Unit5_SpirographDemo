@@ -1,12 +1,12 @@
-//---------------- SVG 2 ------------------//
+//---------------- SVG 3 ------------------//
 $(function () {
     gsap.registerPlugin('GSDevTools');
 
-    let rect = [$('rect')];
+    let poly = [$("polygon")];
 
     let myBody = $('body');
     let content = $('#content');
-    let div1 = $("#svgDiv1");
+    let div1 = $("#svgDiv3");
 
     let mySvg = $('svg');
 
@@ -42,11 +42,11 @@ $(function () {
             }, '-=0.3');
 
 
-            rect.forEach((x) => {
+            poly.forEach((x) => {
                 tl1.fromTo(x, {
                     opacity: 0
                 }, {
-                    opacity: 1,
+                    opacity: 0.75,
                     duration: 2,
                     stagger: 0.1,
                     ease: "power4.Out"
@@ -79,3 +79,5 @@ $(function () {
 
     });
 })
+
+
